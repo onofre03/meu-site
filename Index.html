@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <div class="links">
+            <nav>
+                <img src="imagens/logo.png" class="logo">
+                <ul>
+                    <li><a href="#Sobre">Sobre mim</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#Contato">Contato</a></li>
+                </ul> 
+            </nav>
+            <div class="header-text">
+                <p>Backend dev</p>
+                <h1>Olá, eu sou o <span>Matheus</span></h1>
+            </div>
+        </div>
+        <!-- -----------código para parte "sobre mim" ----------- -->  
+    </div>
+    <div id="Sobre">
+        <div class="links">
+            <div class="coluna">
+                <div class="Sobre-col-1">
+                    <img src="imagens/projeto.png.jpg" class="projeto">
+                </div>
+                <div class="Sobre-col-2">
+                    <h1 class="Subtitulo">Sobre mim</h1>
+                    <p>Me chamo Matheus e tenho 19 anos, nascido em Cuiabá mas fui criado e atualmente estou morando em Florianópolis. Tenho como hobbies ouvir e produzir música, jogar e de vez em quando ver filmes. No momento me encontro focado em me tornar um bom profissional como Desenvolvedor Backend.</p>
+<!------------criação de tabelas--------------->
+                    <div class="tabeladetitulos">
+                        <p class="linkstabela link-ativo" onclick="opentab('historico')">Histórico</p>
+                        <p class="linkstabela" onclick="opentab('skills')">Skills</p>          
+                    </div>
+                    <div class="conteudotab conteudo-ativo" id="historico">
+                        <ul>
+                            <li><span>Histórico escolar</span><br>Ensino médio completo</li>
+                            <li><span>Faculdade</span><br>Análise e Desenvolvimento de sistemas</li>
+                            <li><span>Cursando</span><br>Linguagem de programação orientada a objetos especializada em java</li>
+                        </ul>
+                    </div>
+                    <div class="conteudotab" id="skills">
+                        <ul>
+                            <li><span>Poo/java</span><br>básico-intermediário</li>
+                            <li><span>Inglês</span><br>avançado-fluente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------- código pra portfólio ---------->
+<div id="portfolio">
+    <div class="links">
+        <h1 class="Subtitulo">Meus Trabalhos</h1>
+        <div class="lista-trabb">
+            <div class="trabb">
+                <img src="imagens/reserva.PNG">
+                <div class="layout">
+                    <h3>Exploração Global</h3>
+                    <p>Aplicativo para reserva de hotéis e passagens aéreas</p>
+                </div>
+            </div>
+            <div class="trabb">
+                <img src="imagens/wip.png">
+                <div class="layout">
+                    <h3>WIP!</h3>
+                    <p>projetos futuros em progresso!</p>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+</div>
+<!-- ------------contato------------ -->
+
+<div id="Contato">
+    <div class="links">
+            <div class="contatoE"></div>
+            <h1 class="Subtitulo">Entre em contato!</h1>
+            <div class="contatoD">
+                <form>
+                    <input type="text" name="Seu Nome" placeholder="Seu Nome" required>
+                    <input type="email" name="Seu Email" placeholder="Seu Email" required>
+                    <textarea name="Mensagem" rows="6" placeholder="Sua Mensagem..."></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("linkstabela");
+        var tabcontents = document.getElementsByClassName("conteudotab");
+
+        function opentab(nometab) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("link-ativo");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("conteudo-ativo");
+    }
+    event.currentTarget.classList.add("link-ativo");
+    document.getElementById(nometab).classList.add("conteudo-ativo");
+}
+
+       
+    </script>
+</body>
+</html>

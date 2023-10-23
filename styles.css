@@ -1,0 +1,170 @@
+*{
+    margin: o;
+    padding: 0;
+    font-family: 'poppins' sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.links{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #3cff00;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #3cff00;
+}
+/* ---------- Sobre mim --------- */
+#Sobre{
+    padding: 80px 0px;
+    color: #ababab;
+}
+.coluna{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.projeto{
+    width: 390px;
+    border-radius: 15px;
+    margin-top: 15%;
+}
+.Sobre-col-1{
+    flex-basis: 35%;
+}
+.Sobre-col-2{
+    flex-basis: 60%;
+}
+.Subtitulo{
+    font-size: 60px;
+    font-weight: 300;
+    color: #fff;
+}
+.tabeladetitulos{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.linkstabela{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.linkstabela::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #3cff00;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.linkstabela.link-ativo::after{
+   width: 50%;
+}
+.conteudotab ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.conteudotab ul li span{
+    color: #7dc567;
+    font-size: 14px;
+}
+
+.conteudotab{
+    display: none;
+}
+
+.conteudotab.conteudo-ativo{
+    display: block;
+}
+/* portfólio*/
+#portfolio{
+    padding: 50px 0;
+}
+.lista-trabb{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.trabb{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.trabb img{
+    border-radius: 10px;
+    display: block;
+}
+.contatoD form{
+    width: 80%;
+}
+form input, textarea{
+    width: 80%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.contatoD{
+    flex-basis: 60%;
+}
